@@ -8,7 +8,7 @@
         <h3 class="empty-state-title">Seu carrinho está vazio</h3>
         <p class="empty-state-text">Explore nossa seleção de produtos premium e adicione itens ao seu carrinho.</p>
         <router-link to="/produtos" class="btn btn-primary btn-lg" style="margin-top: var(--space-lg);">
-          Continuar Adquirindo itens
+          Continuar Comprando
         </router-link>
       </div>
 
