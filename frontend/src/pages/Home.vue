@@ -4,22 +4,25 @@
     <section class="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="hero-subtitle">Experiência Única</span>
-        <h1 class="hero-title">
-          Descubra o Mundo<br/>
-          dos <span class="highlight">Vinhos Premium</span>
-        </h1>
-        <p class="hero-description">
-          Selecionamos os melhores rótulos nacionais e importados para momentos especiais.
-          Da uva à taça, uma jornada de sabor e sofisticação.
-        </p>
+      
+      <span class="hero-subtitle">Seu Novo Ponto Favorito 💯</span>
+
+<h1 class="hero-title">
+  Bebidas Premium<br/>
+  com <span class="highlight">Estilo e Sabor</span>
+</h1>
+
+<p class="hero-description">
+  Dos clássicos aos combos, tudo para transformar qualquer ocasião.
+</p>
         <div class="hero-actions">
-          <router-link to="/produtos" class="btn btn-primary btn-lg">
-            Explorar Produtos
-          </router-link>
-          <router-link to="/produtos?categoria=kits" class="btn btn-secondary btn-lg">
-            Kits Gourmet
-          </router-link>
+  <router-link to="/produtos" class="btn btn-primary btn-lg">
+    Ver Bebidas
+  </router-link>
+
+  <router-link to="/produtos?categoria=combos" class="btn btn-secondary btn-lg">
+    Ver Combos
+  </router-link>
         </div>
       </div>
       <div class="hero-scroll">
