@@ -90,13 +90,13 @@
           <div class="harmony-text">
             <span class="harmony-label">Harmonização Perfeita</span>
             <h2 class="harmony-title">
-              Vinho & Queijo:<br/>
+              Bebida gelada & Petiscos:<br/>
               Uma Combinação<br/>
               <span class="highlight">Inesquecível</span>
             </h2>
             <p class="harmony-description">
-              Nossos especialistas selecionaram as melhores combinações de vinhos e queijos
-              para criar experiências gastronômicas memoráveis. Explore nossos kits de harmonização.
+              As bebidas mais procuradas para deixar sua resenha completa. 
+                Dos destilados às cervejas geladas, qualidade e sabor em cada pedido.
             </p>
             <router-link to="/produtos?categoria=kits" class="btn btn-gold btn-lg">
               Explorar Harmonizações
@@ -104,7 +104,7 @@
           </div>
           <div class="harmony-image">
             <div class="harmony-image-wrapper">
-              <span class="harmony-placeholder">🍷🧀</span>
+               <span class="harmony-placeholder">🥃🍺🍸</span>
             </div>
           </div>
         </div>
@@ -176,35 +176,39 @@ const email = ref('')
 const featuredProducts = ref([])
 
 const categories = [
-  { id: 1, name: 'Vinhos', slug: 'vinhos', icon: '🍷', count: 120 },
-  { id: 2, name: 'Cervejas Artesanais', slug: 'cervejas', icon: '🍺', count: 85 },
-  { id: 3, name: 'Queijos Especiais', slug: 'queijos', icon: '🧀', count: 45 },
-  { id: 4, name: 'Destilados Premium', slug: 'destilados', icon: '🥃', count: 60 },
-  { id: 5, name: 'Kits Gourmet', slug: 'kits', icon: '🎁', count: 25 },
-  { id: 6, name: 'Drinks & Coquetéis', slug: 'drinks', icon: '🍸', count: 40 }
+  { id: 1, name: 'Cervejas', slug: 'cervejas', icon: '🍺', count: 120 },
+  { id: 2, name: 'Whiskys', slug: 'whiskys', icon: '🥃', count: 65 },
+  { id: 3, name: 'Vinhos', slug: 'vinhos', icon: '🍷', count: 48 },
+  { id: 4, name: 'Vodkas', slug: 'vodkas', icon: '🍸', count: 40 },
+  { id: 5, name: 'Combos', slug: 'combos', icon: '🔥', count: 30 },
+  { id: 6, name: 'Gin & Drinks', slug: 'gins-drinks', icon: '🍹', count: 25 }
 ]
+
+
+
+
 
 const testimonials = [
   {
     id: 1,
-    name: 'Carlos Mendes',
-    role: 'Sommelier',
+    name: 'Lucas Almeida',
+    role: 'Cliente',
     rating: 5,
-    text: 'A seleção de vinhos é impecável. Encontrei rótulos raros que não achei em lugar nenhum. A entrega foi rápida e bem embalada.'
+    text: 'Entrega muito rápida e as bebidas chegaram super geladas. Virou minha distribuidora favorita.'
   },
   {
     id: 2,
-    name: 'Ana Paula Silva',
-    role: 'Chef de Cozinha',
+    name: 'Mariana Costa',
+    role: 'Cliente',
     rating: 5,
-    text: 'Os kits de harmonização são perfeitos para meus jantares. Qualidade excepcional em todos os produtos. Super recomendo!'
+    text: 'Ótimos preços e muita variedade. Os combos salvam qualquer resenha de última hora.'
   },
   {
     id: 3,
-    name: 'Ricardo Oliveira',
-    role: 'Entusiasta de Cervejas',
-    rating: 4,
-    text: 'Variedade incrível de cervejas artesanais. Descobri marcas fantásticas que não conhecia. Atendimento excelente.'
+    name: 'Felipe Santos',
+    role: 'Cliente',
+    rating: 5,
+    text: 'Whisky original, cerveja trincando e atendimento muito bom. Recomendo demais.'
   }
 ]
 
@@ -218,6 +222,7 @@ onMounted(async () => {
     loading.value = false
   }
 })
+
 
 const subscribe = () => {
   uiStore.showToast('Inscrição realizada com sucesso!', 'success')
