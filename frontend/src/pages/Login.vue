@@ -2,7 +2,7 @@
   <div class="auth-page">
     <div class="auth-container">
       <div class="auth-brand">
-        <span class="brand-icon">🍷</span>
+        <span class="brand-icon">💯</span>
         <h1 class="brand-name">Adega Premium</h1>
         <p class="brand-tagline">Entre para acessar sua conta</p>
       </div>
